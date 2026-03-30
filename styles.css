@@ -4,13 +4,13 @@
   box-sizing: border-box;
 }
 
-header {
-  height: 100vh;
-}
-
 body {
   font-family: 'Instrument Sans', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
   color: white;
+}
+
+header {
+  height: 100vh;
 }
 
 /* =====================
@@ -91,11 +91,9 @@ body {
   border: 1px solid rgba(0, 255, 170, 0.2);
 }
 
-/* Hamburger toggle — hidden input trick */
 #menu-checkbox {
   display: none;
 }
-
 
 .menu-toggle {
   font-size: 25px;
@@ -166,22 +164,22 @@ body {
 /* =====================
    FEATURES SECTION (Peter)
    ===================== */
-.container {
-  background-color: #F5F7F9; 
-  padding: 30px 20px 40px;
-  margin-top: -30px;
-}
-
-.container p {
-  line-height: 1.2;
-}
-
 .contain-top > .Top {
   width: 100%;
   height: 35px;
   background-color: #00589A;
   border: none;
   margin: 0 0 30px 0;
+}
+
+.container {
+  background-color: #F5F7F9;
+  padding: 30px 20px 40px;
+  margin-top: -30px;
+}
+
+.container p {
+  line-height: 1.2;
 }
 
 .container > .Top-text {
@@ -211,20 +209,40 @@ body {
   margin-top: 20px;
 }
 
+.group-two {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 0;
+}
 
- .card-one,
+.card-one,
 .card-two {
-   border: 2px solid white;
-   background-color: white;
-   border-radius: 10px;
-   width: 40%;
-   min-height: 250px;
-   margin-bottom: 20px;
-   padding-left: 10px;
-   padding-bottom: 10px;
-   margin-right: 20px;
-   margin-left: 20px;
- }
+  border: 2px solid white;
+  background-color: white;
+  border-radius: 10px;
+  width: 40%;
+  min-height: 250px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.box-one,
+.box-two {
+  border: 2px solid white;
+  background-color: white;
+  border-radius: 10px;
+  width: 40%;
+  height: 320px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
 
 .card-one > .pic-one > img,
 .card-two .pic-two > img {
@@ -235,9 +253,24 @@ body {
   padding-top: 20px;
 }
 
+.box-one > .pic-three > img,
+.box-two > .pic-four > img {
+  width: 100%;
+  max-width: 130px;
+  display: block;
+  margin: 0 auto 15px auto;
+  padding-top: 30px;
+}
+
 .card-one > h3,
 .card-two > h3 {
   margin-top: 35px;
+  color: black;
+}
+
+.box-one > h3,
+.box-two > h3 {
+  margin-bottom: 12px;
   color: black;
 }
 
@@ -248,47 +281,18 @@ body {
   font-size: 17.4px;
 }
 
-.group-two {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 0;
-}
-
-.box-one,
-.box-two {
-   border: 2px solid white;
-   background-color: white;
-   border-radius: 10px;
-   width: 40%;
-   margin-left: 20px;
-   padding-left: 10px;
-   padding-bottom: 10px;
-   height: 320px;
-   margin-right: 20px;
-   margin-left: 20px;
- }
-
-.box-one > .pic-three > img,
-.box-two > .pic-four > img {
-  width: 100%;
-  max-width: 130px;
-  display: block;
-  margin: 0 auto 15px auto;
-  padding-top: 30px;
-}
-
-.box-one > h3,
-.box-two > h3 {
-  margin-bottom: 12px;
-  color: black;
-}
-
 .box-one > p,
 .box-two > p {
   color: #666666;
   font-size: 17.4px;
+}
+
+.card-one:hover,
+.card-two:hover,
+.box-one:hover,
+.box-two:hover {
+  transform: translateY(-10px);
+  transition: 0.4s ease;
 }
 
 /* =====================
@@ -312,10 +316,10 @@ body {
   padding-left: 20px;
 }
 
-.left-third-part h2{
-    color: black;
-    font-size: 56px;
-    width: 150%;
+.left-third-part h2 {
+  color: black;
+  font-size: 56px;
+  width: 150%;
 }
 
 .left-third-part p {
@@ -345,18 +349,17 @@ body {
   padding-left: 290px;
 }
 
-.box-style{
-    border-radius: 5px;
-    background-color: #F5FBFD;
-    height: 290px;
-    width: 370px;
-    padding-left: 20px;
-    margin: 10px;
-    border-radius: 10px;
+.box-style {
+  background-color: #F5FBFD;
+  height: 290px;
+  width: 370px;
+  padding-left: 20px;
+  margin: 10px;
+  border-radius: 10px;
 }
 
 .box-style:hover {
-  transform: skewY(3px);
+  transform: translateY(-10px);
   transition: 0.4s ease;
 }
 
@@ -380,32 +383,29 @@ body {
   color: #666666;
 }
 
-
 /* =====================
    CTA + FOOTER (Samuel)
    ===================== */
 .parent {
   background-color: #1A202C;
 }
- 
+
 .first {
-  padding: 40px 20px 40px;
   background-color: #014751;
   width: 100%;
   text-align: center;
   padding: 6rem 2rem;
-  
 }
- 
+
 .first > h2 {
   color: white;
   font-size: 45px;
 }
- 
+
 h2 > .break {
   display: block;
 }
- 
+
 .first > p {
   color: white;
   padding-top: 20px;
@@ -413,7 +413,7 @@ h2 > .break {
   max-width: 720px;
   margin: 15px auto;
 }
- 
+
 .first > a {
   display: inline-block;
   padding: 14px 28px;
@@ -424,8 +424,7 @@ h2 > .break {
   margin-top: 30px;
   font-size: 15px;
 }
- 
-/* ── Footer columns ── */
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -435,7 +434,7 @@ h2 > .break {
   padding: 0 60px 40px;
   gap: 40px;
 }
- 
+
 .ft1,
 .ft2,
 .ft3 {
@@ -443,8 +442,7 @@ h2 > .break {
   flex-direction: column;
   flex: 1 1 160px;
 }
- 
-/* ── Column headings ── */
+
 .ft1 > h3,
 .ft2 > h3,
 .ft3 > h3 {
@@ -454,8 +452,7 @@ h2 > .break {
   font-size: 22px;
   font-weight: 700;
 }
- 
-/* ── Links with vertical breathing room ── */
+
 .ft1 > a,
 .ft2 > a,
 .ft3 > a {
@@ -466,45 +463,34 @@ h2 > .break {
   padding: 8px 0;
   transition: color 0.2s ease;
 }
- 
+
 .ft1 > a:hover,
 .ft2 > a:hover,
 .ft3 > a:hover {
   color: #03D37F;
 }
- 
-/* ── Divider + copyright ── */
+
 .copy-right {
   border-top: 1px solid rgba(255, 255, 255, 0.12);
   margin: 0 60px;
   padding: 20px 0 30px;
 }
- 
+
 .copy-right > p {
   color: rgba(255, 255, 255, 0.7);
   font-size: 14px;
 }
 
-
-
-
-
 /* =====================
-   MEDIA QUERIES — TABLET
+   MEDIA QUERIES — 1339px
    ===================== */
-@media (max-width: 969px) {
+@media (max-width: 1339px) {
 
-  /* ── Navbar ── */
+  /* -- Navbar -- */
   .nav-links {
     display: none;
   }
-  .nav-links.active{
-    display: block;
-    position: absolute;
-    top: 50px;
-    width: 100%;
-    /* background-color: red; */
-  }
+
   .menu-toggle {
     display: block;
   }
@@ -514,7 +500,7 @@ h2 > .break {
     padding: 10px 20px;
   }
 
-  /* ── Hero ── */
+  /* -- Hero -- */
   .hero {
     justify-content: center;
   }
@@ -530,8 +516,100 @@ h2 > .break {
     margin-top: 0;
   }
 
+  /* -- Built For -- */
+  .third-part {
+    flex-direction: column;
+    padding: 50px 20px;
+  }
 
-  /* ── Peter's features section ── */
+  .margin {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-third-part {
+    flex: unset;
+    padding-left: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .left-third-part h2 {
+    font-size: 36px;
+    width: 100%;
+  }
+
+  .left-third-part p {
+    width: 100%;
+    font-size: 16px;
+    margin: 10px auto 30px;
+    max-width: 500px;
+  }
+
+  .right-third-part {
+    width: 100%;
+  }
+
+  .first-line,
+  .second-line {
+    padding-left: 0;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  .box-style {
+    width: calc(50% - 16px);
+    height: auto;
+    min-height: 220px;
+    padding: 20px;
+    margin: 0;
+  }
+}
+
+/* =====================
+   MEDIA QUERIES — 969px
+   ===================== */
+@media (max-width: 969px) {
+
+  /* -- Navbar -- */
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links.active {
+    display: block;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar {
+    width: 92%;
+    padding: 10px 20px;
+  }
+
+  /* -- Hero -- */
+  .hero {
+    justify-content: center;
+  }
+
+  .hero-content {
+    width: 92%;
+    padding-top: 0;
+  }
+
+  .hero-content h1 {
+    font-size: 88px;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  /* -- Features -- */
   .group-one,
   .group-two {
     flex-direction: column;
@@ -547,7 +625,7 @@ h2 > .break {
     margin: 0 0 20px 0;
   }
 
-  /* ── Built For section layout ── */
+  /* -- Built For -- */
   .third-part {
     flex-direction: column;
     padding: 50px 20px;
@@ -581,7 +659,6 @@ h2 > .break {
     width: 100%;
   }
 
-  /* Remove the big left padding that was pushing cards right */
   .first-line,
   .second-line {
     padding-left: 0;
@@ -590,7 +667,6 @@ h2 > .break {
     margin-bottom: 16px;
   }
 
-  /* Make cards fit nicely in a 2-column grid */
   .box-style {
     width: calc(50% - 16px);
     height: auto;
@@ -600,224 +676,17 @@ h2 > .break {
   }
 }
 
-
-
-
-
 /* =====================
-   MEDIA QUERIES — TABLET
-   ===================== */
-@media (max-width: 1200px) {
-
-  /* ── Navbar ── */
-  .nav-links {
-    display: none;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  .navbar {
-    width: 92%;
-    padding: 10px 20px;
-  }
-
-  /* ── Hero ── */
-  .hero {
-    justify-content: center;
-  }
-
-  .hero-content {
-    width: 92%;
-    padding-top: 0;
-  }
-
-  .hero-content h1 {
-    font-size: 88px;
-    width: 100%;
-    margin-top: 0;
-  }
-
-
-  
-
-  /* ── Built For section layout ── */
-  .third-part {
-    flex-direction: column;
-    padding: 50px 20px;
-  }
-
-  .margin {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .left-third-part {
-    flex: unset;
-    padding-left: 0;
-    text-align: center;
-    width: 100%;
-  }
-
-  .left-third-part h2 {
-    font-size: 36px;
-    width: 100%;
-  }
-
-  .left-third-part p {
-    width: 100%;
-    font-size: 16px;
-    margin: 10px auto 30px;
-    max-width: 500px;
-  }
-
-  .right-third-part {
-    width: 100%;
-  }
-
-  /* Remove the big left padding that was pushing cards right */
-  .first-line,
-  .second-line {
-    padding-left: 0;
-    justify-content: center;
-    gap: 16px;
-    margin-bottom: 16px;
-  }
-
-  /* Make cards fit nicely in a 2-column grid */
-  .box-style {
-    width: calc(50% - 16px);
-    height: auto;
-    min-height: 220px;
-    padding: 20px;
-    margin: 0;
-  }
-}
-
-
-
-
-
-
-
-/* =====================
-   MEDIA QUERIES — TABLET
-   ===================== */
-@media (max-width: 1500px) {
-
-  /* ── Hero ── */
-  .hero {
-    justify-content: center;
-  }
-
-  .hero-content {
-    width: 92%;
-    padding-top: 0;
-  }
-
-  .hero-content h1 {
-    font-size: 88px;
-    width: 100%;
-    margin-top: 0;
-  }
-
-
-  
-
-  /* ── Built For section layout ── */
-  .third-part {
-    flex-direction: column;
-    padding: 50px 20px;
-  }
-
-  .margin {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .left-third-part {
-    flex: unset;
-    padding-left: 0;
-    text-align: center;
-    width: 100%;
-  }
-
-  .left-third-part h2 {
-    font-size: 36px;
-    width: 100%;
-  }
-
-  .left-third-part p {
-    width: 100%;
-    font-size: 16px;
-    margin: 10px auto 30px;
-    max-width: 500px;
-  }
-
-  .right-third-part {
-    width: 100%;
-  }
-
-  /* Remove the big left padding that was pushing cards right */
-  .first-line,
-  .second-line {
-    padding-left: 0;
-    justify-content: center;
-    gap: 16px;
-    margin-bottom: 16px;
-  }
-
-  /* Make cards fit nicely in a 2-column grid */
-  .box-style {
-    width: calc(50% - 16px);
-    height: auto;
-    min-height: 220px;
-    padding: 20px;
-    margin: 0;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* =====================
-   MEDIA QUERIES — TABLET
+   MEDIA QUERIES — 768px
    ===================== */
 @media (max-width: 768px) {
 
-  /* --- Navbar --- */
+  /* -- Navbar -- */
   .navbar {
     width: 92%;
     padding: 8px 16px;
     border-radius: 12px;
     top: 12px;
-  }
-
-  .hero{
-    padding: 7rem 1.5rem 3rem;
-    min-height: auto;
   }
 
   .menu-toggle {
@@ -842,17 +711,21 @@ h2 > .break {
     width: 100%;
     text-align: center;
     padding: 12px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.07);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
   }
 
   .nav-links li:last-child {
     border-bottom: none;
   }
 
-  /* --- Hero --- */
+  /* -- Hero -- */
   header {
     height: auto;
-    /* min-height: 320px; */
+  }
+
+  .hero {
+    padding: 7rem 1.5rem 3rem;
+    min-height: auto;
   }
 
   .hero-content {
@@ -886,32 +759,30 @@ h2 > .break {
     font-size: 14px;
   }
 
-  /* --- Features --- */
+  /* -- Features -- */
+  .contain-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 90%;
+    margin: 10px auto;
+  }
 
-  /* Parent container */
-.contain-top {
-  display: flex;
-  justify-content: center; /* Centers the child (Top) horizontally */
-  align-items: center; /* Optionally, center vertically */
-  height: 100px; /* Adjust height as needed */
-  width: 90%;
-  margin: 10px auto;
-}
+  .Top {
+    width: 50%;
+    height: 55px;
+  }
 
-/* Child element */
-.Top {
-  width: 50%; /* Set the width of the Top div (you can adjust this percentage as needed) */
-  height: 55px; /* Set the height to match the visual you showed */
-}
+  .container {
+    background-color: #F5F7F9;
+    margin-top: -120px;
+  }
 
-.container {
-  background-color: #F5F7F9;
-  margin-top: -120px;
-}
+  .Top-text {
+    margin-top: 55px;
+  }
 
-.Top-text{
-  margin-top: 55px;
-}
   .card-one,
   .card-two,
   .box-one,
@@ -923,7 +794,7 @@ h2 > .break {
     min-height: unset;
   }
 
-  /* --- Built For --- */
+  /* -- Built For -- */
   .third-part {
     padding: 40px 16px;
   }
@@ -959,11 +830,10 @@ h2 > .break {
   .box-style {
     width: 100%;
     height: auto;
-    /* padding: 16px ; */
     margin: 0;
   }
 
-  /* --- CTA --- */
+  /* -- CTA -- */
   .first > h2 {
     font-size: 28px;
   }
@@ -980,17 +850,21 @@ h2 > .break {
     padding: 14px 20px;
   }
 
-  /* --- Footer --- */
+  /* -- Footer -- */
   .footer {
     padding: 0 24px 30px;
     gap: 0;
   }
 
-  .ft1, .ft2, .ft3 {
+  .ft1,
+  .ft2,
+  .ft3 {
     flex: 1 1 100%;
   }
 
-  .ft1 > h3, .ft2 > h3, .ft3 > h3 {
+  .ft1 > h3,
+  .ft2 > h3,
+  .ft3 > h3 {
     padding-top: 30px;
     font-size: 18px;
   }
@@ -1000,13 +874,12 @@ h2 > .break {
   }
 }
 
-
 /* =====================
-   MEDIA QUERIES — MOBILE
+   MEDIA QUERIES — 480px
    ===================== */
 @media (max-width: 480px) {
 
-  /* --- Navbar --- */
+  /* -- Navbar -- */
   .navbar {
     width: 94%;
     padding: 7px 14px;
@@ -1018,12 +891,7 @@ h2 > .break {
     width: 100px;
   }
 
-  /* --- Hero: reduced height on phone --- */
-  header {
-    /* height: 52vh; */
-    /* min-height: 300px; */
-  }
-
+  /* -- Hero -- */
   .hero-content {
     width: 94%;
     padding-top: 60px;
@@ -1043,7 +911,6 @@ h2 > .break {
     margin-bottom: 16px;
   }
 
-  /* --- Buttons: full width, stacked --- */
   .hero-buttons {
     flex-direction: column;
     gap: 10px;
@@ -1061,7 +928,7 @@ h2 > .break {
     display: block;
   }
 
-  /* --- Features --- */
+  /* -- Features -- */
   .container {
     padding: 20px 14px 30px;
   }
@@ -1077,7 +944,7 @@ h2 > .break {
     padding: 12px;
   }
 
-  /* --- Built For --- */
+  /* -- Built For -- */
   .third-part {
     padding: 30px 14px;
   }
@@ -1106,7 +973,7 @@ h2 > .break {
     margin: 0;
   }
 
-  /* --- CTA --- */
+  /* -- CTA -- */
   .first {
     padding: 30px 16px;
   }
@@ -1131,18 +998,22 @@ h2 > .break {
     border-radius: 8px;
   }
 
-  /* --- Footer --- */
+  /* -- Footer -- */
   .footer {
     padding: 0 16px 24px;
     gap: 0;
   }
 
-  .ft1 > h3, .ft2 > h3, .ft3 > h3 {
+  .ft1 > h3,
+  .ft2 > h3,
+  .ft3 > h3 {
     padding-top: 24px;
     font-size: 16px;
   }
 
-  .ft1 > a, .ft2 > a, .ft3 > a {
+  .ft1 > a,
+  .ft2 > a,
+  .ft3 > a {
     font-size: 13px;
     padding: 6px 0;
   }
