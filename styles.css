@@ -694,6 +694,89 @@ h2 > .break {
 
 
 
+/* =====================
+   MEDIA QUERIES — TABLET
+   ===================== */
+@media (max-width: 1500px) {
+
+  /* ── Hero ── */
+  .hero {
+    justify-content: center;
+  }
+
+  .hero-content {
+    width: 92%;
+    padding-top: 0;
+  }
+
+  .hero-content h1 {
+    font-size: 88px;
+    width: 100%;
+    margin-top: 0;
+  }
+
+
+  
+
+  /* ── Built For section layout ── */
+  .third-part {
+    flex-direction: column;
+    padding: 50px 20px;
+  }
+
+  .margin {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-third-part {
+    flex: unset;
+    padding-left: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .left-third-part h2 {
+    font-size: 36px;
+    width: 100%;
+  }
+
+  .left-third-part p {
+    width: 100%;
+    font-size: 16px;
+    margin: 10px auto 30px;
+    max-width: 500px;
+  }
+
+  .right-third-part {
+    width: 100%;
+  }
+
+  /* Remove the big left padding that was pushing cards right */
+  .first-line,
+  .second-line {
+    padding-left: 0;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  /* Make cards fit nicely in a 2-column grid */
+  .box-style {
+    width: calc(50% - 16px);
+    height: auto;
+    min-height: 220px;
+    padding: 20px;
+    margin: 0;
+  }
+}
+
+
+
+
+
+
+
 
 
 
