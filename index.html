@@ -22,11 +22,11 @@
       </a>
 
       <!-- <input type="checkbox" id="menu-checkbox"> -->
-    <label for="menu-checkbox" class="menu-toggle">&#9776;</label>
+    <label for="menu-checkbox" class="menu-toggle" id="navIcon">&#9776;</label>
 
       
 
-      <ul class="nav-links">
+      <ul class="nav-links" id="nav-links">
         <li><a href="#">Features</a></li>
         <li><a href="#">Use Cases</a></li>
         <li><a href="#">Pricing</a></li>
@@ -202,6 +202,16 @@
     </div>
 
 
+    <script>
+        const navIcon = document.getElementById('navIcon');
+        const navLinks = document.getElementById('nav-links');
+        const iconToggle = document.querySelector('.menu-toggle');  
+        navIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
 
+            iconToggle.classList.toggle('fa-bars');
+            iconToggle.classList.toggle('fa-times')
+        });
+    </script>
 </body>
 </html>

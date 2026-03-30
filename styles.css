@@ -497,7 +497,13 @@ h2 > .break {
   .nav-links {
     display: none;
   }
-
+  .nav-links.active{
+    display: block;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    /* background-color: red; */
+  }
   .menu-toggle {
     display: block;
   }
@@ -844,8 +850,8 @@ h2 > .break {
 
   /* --- Hero --- */
   header {
-    height: 55vh;
-    min-height: 320px;
+    height: auto;
+    /* min-height: 320px; */
   }
 
   .hero-content {
@@ -1013,8 +1019,8 @@ h2 > .break {
 
   /* --- Hero: reduced height on phone --- */
   header {
-    height: 52vh;
-    min-height: 300px;
+    /* height: 52vh; */
+    /* min-height: 300px; */
   }
 
   .hero-content {
