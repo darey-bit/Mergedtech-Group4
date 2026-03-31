@@ -484,7 +484,7 @@ h2 > .break {
 /* =====================
    MEDIA QUERIES — 1339px
    ===================== */
-@media (max-width: 1339px) {
+@media (max-width: 1200px) {
 
   /* -- Navbar -- */
   .nav-links {
